@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-import { PropertyCard } from "../../components";
+// import { PropertyCard } from "../../components";
 import { properties } from "../../data/properties.js";
 import {
   Bath,
@@ -212,11 +212,11 @@ const PropertiesSection = () => {
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.5 }}
                     >
-                      {property.bedrooms > 0 && (
+                      {property.bedrooms && (
                         <div className="flex items-center space-x-2 text-slate-600">
                           <Bed className="w-4 h-4" />
                           <span className="text-sm font-medium">
-                            {property.bedrooms} Bedrooms
+                            {property.bedrooms}
                           </span>
                         </div>
                       )}
@@ -261,7 +261,7 @@ const PropertiesSection = () => {
                       </div>
                     </motion.div>
 
-                    <div className="flex flex-col xl:flex-row gap-4 mt-4">
+                    <div className="flex flex-col gap-4 mt-4">
                       {/* Video Button */}
                       {property.video !== "" && (
                         <motion.button
