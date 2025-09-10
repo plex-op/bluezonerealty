@@ -29,7 +29,7 @@ export const properties = [
     sqft: 5300,
     facing: "West",
     perSqft: "@ ₹5,000 / sq.ft.",
-    pdfName: "1",
+    pdfName: "pdf",
     video: "https://youtu.be/3VKCCd4FpZ0?si=lwqTDSt7T_2r09wn",
     images: [
       {
