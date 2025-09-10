@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* @theme{
+  --color-primary-red: oklch(0.99 0 0);
+  --color-primary-amber: oklch(0 0 0);
+} */
+
+@utility container {
+  margin-inline: auto;
+  width: 100%;
+  @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 2xl:px-12;
+}
+
+@keyframes square-animation {
+  0% { left: 0; top: 0; }
+  10.5% { left: 0; top: 0; }
+  12.5% { left: 32px; top: 0; }
+  23% { left: 32px; top: 0; }
+  25% { left: 64px; top: 0; }
+  35.5% { left: 64px; top: 0; }
+  37.5% { left: 64px; top: 32px; }
+  48% { left: 64px; top: 32px; }
+  50% { left: 32px; top: 32px; }
+  60.5% { left: 32px; top: 32px; }
+  62.5% { left: 32px; top: 64px; }
+  73% { left: 32px; top: 64px; }
+  75% { left: 0; top: 64px; }
+  85.5% { left: 0; top: 64px; }
+  87.5% { left: 0; top: 32px; }
+  98% { left: 0; top: 32px; }
+  100% { left: 0; top: 0; }
+}
+
+.animate-square {
+  animation: square-animation 10s ease-in-out infinite both;
+}
