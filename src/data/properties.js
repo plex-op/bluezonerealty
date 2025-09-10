@@ -15,7 +15,7 @@ export const properties = [
       "0.5 km from Mudichur Main Road",
       "1 km from 400 ft Outer Ring Road",
       "2 kms from Annai Hospital",
-      "4 kms From Vandlur , Tambaram",
+      "4 kms From vandalur , Tambaram",
       "Many reputed colleges and schools within a 2 km radius",
       "8 kms from Kilambakkam Bus Terminus",
       "24 kms from Old Mahabalipuram Road (OMR)",
