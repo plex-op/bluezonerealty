@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -27,12 +27,25 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
+  // ✅ Add Google Ads Conversion Event
+  useEffect(() => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17527884589/3-fbCOrhgbAbEK2W-aVB",
+      });
+    } else {
+      console.warn("gtag not loaded yet");
+    }
+  }, []);
+
   return (
     <div className="relative">
       <Toaster />
       <Suspense fallback={<Loader />}>
         <RouterProvider router={router} />
       </Suspense>
+
+      {/* ✅ WhatsApp Floating Button */}
       <a
         href={`https://wa.me/91${import.meta.env.VITE_BLUEZONE_MOBILE}`}
         target="_blank"
