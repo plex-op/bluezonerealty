@@ -52,7 +52,7 @@ const Home = () => {
         <meta name="author" content="Bluezone Realty" />
         <meta name="robots" content="index, follow" />
 
-        {/* ✅ Open Graph (for Facebook, Instagram, LinkedIn, Website previews) */}
+        {/* ✅ Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bluezonerealty.in/" />
         <meta
@@ -71,6 +71,15 @@ const Home = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Bluezone Realty" />
         <meta property="og:locale" content="en_IN" />
+
+        {/* ✅ Google Tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17527884589"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);} 
+          gtag('js', new Date());
+          gtag('config', 'AW-17527884589');
+        `}</script>
       </>
 
       <HeroSection />
