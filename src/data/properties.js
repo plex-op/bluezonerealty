@@ -28,7 +28,7 @@ export const properties = [
     sqft: 1750, // updated built-up area
     facing: "North",
     perSqft: "@ ₹5,000 / sq.ft.",
-    pdfName: "pdf",
+    pdfName: "bluezone",
     video: "https://youtu.be/KYMBhBJw1-0",
     images: [
       {
